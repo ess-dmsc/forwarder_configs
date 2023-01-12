@@ -49,8 +49,8 @@ for pv, schema, topic, access_type in raw_config:
         )
     )
 
-producer = Producer(**config)
-producer.produce(CONFIG_TOPIC, serialise_rf5k(UpdateType.REMOVEALL, []))
+producer = Producer(**kafka_config)
+producer.produce(args.topic, serialise_rf5k(UpdateType.REMOVEALL, []))
 time.sleep(1)
-producer.produce(CONFIG_TOPIC, serialise_rf5k(UpdateType.ADD, STREAMS))
+producer.produce(args.topic, serialise_rf5k(UpdateType.ADD, streams))
 producer.flush()
