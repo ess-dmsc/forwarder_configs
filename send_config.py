@@ -30,6 +30,13 @@ required_args.add_argument(
     required=True,
 )
 
+parser.add_argument(
+    "-c",
+    "--clear_existing",
+    action="store_true",
+    help="whether to clear the existing config first (be careful!)",
+)
+
 args = parser.parse_args()
 
 kafka_config = {"bootstrap.servers": args.broker}
@@ -50,7 +57,11 @@ for pv, schema, topic, access_type in raw_config:
     )
 
 producer = Producer(**kafka_config)
-producer.produce(args.topic, serialise_rf5k(UpdateType.REMOVEALL, []))
-time.sleep(1)
+
+if args.clear_existing:
+    print("Clearing existing configuration!")
+    producer.produce(args.topic, serialise_rf5k(UpdateType.REMOVEALL, []))
+    time.sleep(1)
+
 producer.produce(args.topic, serialise_rf5k(UpdateType.ADD, streams))
 producer.flush()
