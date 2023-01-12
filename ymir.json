@@ -1,0 +1,21 @@
+{ 
+    "streams": [
+        ["YMIR-SpScn:MC-X-01:Mtr-RBV-TSE", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-Y-01:Mtr-RBV-TSE", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-Z-01:Mtr-RBV-TSE", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-X-01:Mtr.VELO", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-Y-01:Mtr.VELO", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-Z-01:Mtr.VELO", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-X-01:Mtr.RBV", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-Y-01:Mtr.RBV", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpScn:MC-Z-01:Mtr.RBV", "f144", "ymir_motion", "pva"],
+        ["YMIR-SpRot:MC-Rz-01:m.RBV", "f142", "ymir_motion", "pva"], 
+        ["YMIR-ChpSy1:Chop-MIC-101:Spd_Stat", "f144", "ymir_motion", "pva"], 
+        ["YMIR-ChpSy1:Chop-MIC-101:Spd_SP", "f142", "ymir_motion", "pva"], 
+        ["YMIR-ChpSy1:Chop-MIC-101:Spd_Stat", "f142", "ymir_motion", "pva"], 
+        ["YMIR-SETS:SE-BADC-001:VALUE", "nttable_se00", "ymir_motion", "pva"], 
+        ["YMIR-SETS:SE-BADC-001:SLOWDATA", "f142", "ymir_motion", "pva"], 
+        ["YMIR-TS:Ctrl-EVR-01:01-TS-I", "tdct", "ymir_motion", "pva"], 
+        ["YMIR-TS:Ctrl-EVR-01:EvtFCnt-I", "f142", "ymir_motion", "pva"] 
+    ]
+}
