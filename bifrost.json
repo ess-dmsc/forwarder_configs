@@ -1,0 +1,12 @@
+{ 
+    "streams": [
+        ["BIFROST-ChpSy2:Chop-BWC-101:ChopState_R", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-101:Spd_R", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-101:ChopDly-S", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-101:InPhs_R", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-102:ChopState_R", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-102:Spd_R", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-102:ChopDly-S", "f144", "bifrost_choppers", "pva"],
+        ["BIFROST-ChpSy2:Chop-BWC-102:InPhs_R", "f144", "bifrost_choppers", "pva"]
+    ]
+}
